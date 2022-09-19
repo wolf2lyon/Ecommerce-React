@@ -1,0 +1,26 @@
+.container-bars{
+    width: 20px;
+    height: 100%;
+    margin-left: 25px;
+    margin-right: 17px;
+    cursor: pointer;
+}
+.bars{
+    background-color: black;
+    width: 16px;
+    height: 3px;
+    margin: 2px;
+    transform-origin: 0px 100%;
+    transition: all 600ms;
+}
+.active_bar1{
+    
+    transform: rotate(45deg) translate(-1px,1px);
+}
+.active_bar2{
+    opacity: 0;
+    margin-left: -30px;
+}
+.active_bar3{
+    transform: rotate(-45deg) translate(0px,2px);
+}
