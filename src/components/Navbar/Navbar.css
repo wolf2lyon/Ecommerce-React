@@ -19,6 +19,11 @@ nav{
 .pages-links{
     display: none;
 }
+.pages-links a{
+    text-decoration: none;
+    color: black;
+}
+
 /* Media queries */
 @media only screen and (min-width: 700px) {
     .pages-links{
