@@ -14,20 +14,54 @@ const products=[
     }
 ]
 
-export const getproducts=( categoryID )=>{
-    return new Promise((resolve)=>{
-        setTimeout(()=>{
-            resolve(categoryID ? products.filter(prod=> prod.category === categoryID) : products)
-        },1000)
-    })
-}
-export const getproduct = (id) =>{
-    return new Promise((resolve)=>{
-        setTimeout(()=>{
-            resolve(products.find(prod => prod.id === id))
-        },1000)
-    })
-}
+// export const getproducts=( categoryID )=>{
+//     return new Promise((resolve)=>{
+//         setTimeout(()=>{
+//             resolve(categoryID ? products.filter(prod=> prod.category === categoryID) : products)
+//         },1000)
+//     })
+// }
+// export const getproduct = (id) =>{
+//     return new Promise((resolve)=>{
+//         setTimeout(()=>{
+//             resolve(products.find(prod => prod.id === id))
+//         },1000)
+//     })
+// }
+
+
+
+ export const getProducts = () => {
+     return new Promise((resolve, reject) => {
+         setTimeout(() => {
+             resolve(products)
+         }, 1500)
+     })
+ }
+
+ export const getProduct = (id) => {
+     return new Promise((resolve) => {
+         setTimeout(() => {
+             resolve(products.find(prod => prod.id === id))
+         }, 1000)
+     })
+ }
+
+ export const getProductsByCategory = (categoryId) => {
+     return new Promise((resolve) => {
+         setTimeout(() => {
+             resolve(products.filter(prod => prod.category === categoryId))
+         }, 1000)
+     })
+ }
+
+ export const getProductById = (id) => {
+     return new Promise((resolve) => {
+         setTimeout(() => {
+             resolve(products.find(prod => prod.id === id))
+         }, 500)
+     })
+ }
 
 
 
