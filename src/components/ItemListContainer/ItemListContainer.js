@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { getProducts, getProductsByCategory, getProductById} from "../../asyncMock"
+import { getProducts, getProductsByCategory} from "../../asyncMock"
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
 import './ItemListContainer.css'
@@ -20,7 +20,7 @@ const ItemListContainer=({ greeting })=>{
         })  
     },[categoryID])
 
-     if(loading) {
+     if(loading && true) {
           return <h1>Cargando productos...</h1>
      }
 
