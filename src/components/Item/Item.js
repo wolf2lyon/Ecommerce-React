@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import './Item.css'
+
 const Item = ({prod}) => {
     return (
         <div className="infProduct"  key={prod.id}>
