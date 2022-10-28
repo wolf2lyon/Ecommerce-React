@@ -30,19 +30,10 @@ const ItemListContainer=({ greeting })=>{
         .finally(()=>{
             setLoading(false)
         })
-        // const asyncFunction = categoryID ? getProductsByCategory : getProducts
-       
-        // asyncFunction(categoryID).then(response => {
-        //     setProducts(response)
-        // }).catch(error => {
-        //     console.log(error)
-        // }).finally(() => {
-        //     setLoading(false)
-        // })  
     },[categoryID])
 
      if(loading && true) {
-          return <h1>Cargando productos...</h1>
+          return <h1 className='list_loading'>Cargando productos...</h1>
      }
 
     return(

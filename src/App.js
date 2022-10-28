@@ -12,7 +12,7 @@ function App() {
     <div className="App">
     <NotificationProvider>
       <CartContextProvider >
-        <BrowserRouter> 
+        <BrowserRouter>
           <Navbar/>
           <Routes>
             <Route path='/' element={<ItemListContainer greeting="SNEAKER COMPANY"/>}></Route>

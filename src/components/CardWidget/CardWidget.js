@@ -9,8 +9,11 @@ const CardWidget=()=>{
     const totalQuantity = getTotalQuantity()
     return(
         <div className='card-logo'>
+        <Link to={"/cart"}>
             <img src={card} alt='card'></img>
+        </Link>
             {totalQuantity}
+        
         </div>
     )
 }

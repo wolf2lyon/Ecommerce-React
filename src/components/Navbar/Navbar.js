@@ -34,15 +34,13 @@ const Navbar=()=>{
 
         <div className='containerElements-1'>
             <BurgerMenu clicked={clicked} handleClick={handleClick}/>
-            <div className='logo'><img src='/images/logo.svg' alt=''></img></div>
+            <Link to="/"> <div className='logo'><img src='/images/logo.svg' alt=''></img></div></Link>
             <div className='pages-links'>
                 <Link to="/"><div className='page_link4'>Home</div></Link>
                 { categories.map(cat => (
                     <NavLink key={cat.id} to={`/category/${cat.slug}`}><div className={`page_link${cat.order}`}>{cat.label}</div></NavLink>  
                 ))}
-                {/* <NavLink to={`/category/Sportwear`}><div className='page_link1'>Sportwear</div></NavLink>
-                <NavLink to={`/category/Running`}><div className='page_link2'>Running</div></NavLink>
-                <NavLink to={`/category/Montaña`}><div className='page_link3'>Montaña</div></NavLink> */}
+
             </div>
         </div>
 

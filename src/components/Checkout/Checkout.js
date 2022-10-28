@@ -2,21 +2,20 @@ import { useState, useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { getDocs, addDoc, collection, doc, updateDoc, where, query, documentId, writeBatch } from 'firebase/firestore'
 import { db } from '../../services/firebase'
+import Form1 from "../Form/Form"
+import './Checkout.css'
+
 
 const Checkout = () => {
     const [loading, setLoading] = useState(false)
 
     const { cart, total, clearCart } = useContext(CartContext)
 
-    const createOrder = async () => {
+    const createOrder = async (buyer) => {
         setLoading(true)
         try {
             const objOrder = {
-                buyer: {
-                    name: 'Sebastian Zuviria',
-                    phone: '123456789',
-                    email: 'contact@sebaz.io'
-                },
+                buyer,
                 items: cart,
                 total
             }
@@ -66,13 +65,13 @@ const Checkout = () => {
     }
 
     if(loading) {
-        return <h1>Su orden se esta generando...</h1>
+        return <h1 className="Orden">Su orden se esta generando...</h1>
     }
 
     return (
         <>
-            <h1>Checkout</h1>
-            <button onClick={createOrder}>Agregar documento</button>
+            <h1 className="checkout_container">Checkout</h1>
+            <Form1 createOrder={createOrder}></Form1>
             
         </>
     )

@@ -12,16 +12,16 @@ const CartItem = ({ id, name, quantity, price }) => {
 
     return (
         <article className='CardCartItem'>
-            <header className="HeaderCartItem">
+            <div className="HeaderCartItem">
                 <h2 className="ItemHeaderCartItem">
                     {name}
                 </h2>
-            </header>
+            </div>
             <section className='ContainerItemCartItem'>
-                <p className="InfoCartItem">
+                <p className="InfoCartItemf">
                     Cantidad: {quantity}
                 </p>
-                <p className="InfoCartItem">
+                <p className="InfoCartItemf">
                     Precio x Unidad: ${price}
                 </p>
             </section>           

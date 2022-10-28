@@ -22,17 +22,11 @@ const ItemDetailContainer=({ setCart })=>{
        }).finally(()=>{
             setLoading(false)
        })
-       
-        // getProductById(productID).then(product => {
-        //     setProduct(product)
-        // }).finally(()=>{
-        //     setLoading(false);
-        // })
     }, [productID])
     
 
     if(loading){
-        return <h1>Loading...</h1>
+        return <h1 className="detail_container">Loading...</h1>
     }
     return (
         <div className="cardProduct">      
