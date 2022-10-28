@@ -1,4 +1,4 @@
-# Zuvcommerce
+# Sneaker Company
 
 > Ecommerce with auth and admin dashboard.
 
@@ -19,6 +19,3 @@ $ npm start
 - [Create-React-App](https://create-react-app.dev/)
 - [Firebase](https://firebase.com)
 
-## Test App 
-
-[Deploy](https://github.com/wolf2lyon/Ecommerce-React)
