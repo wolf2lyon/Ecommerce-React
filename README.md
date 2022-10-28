@@ -8,7 +8,7 @@ En este proyecto mostrare mis conocimientos de React y sus diversas funcionalida
 
 ```bash
 $ git clone https://github.com/szuviria/zuvcommerce.git
-$ cd zuvcommerce
+$ cd proyectoEccommerece
 $ npm install
 $ npm start
 ```
