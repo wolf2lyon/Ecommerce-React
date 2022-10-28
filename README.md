@@ -2,7 +2,7 @@
 
 > Ecommerce with auth and admin dashboard.
 
-This product is being built
+En este proyecto mostrare mis conocimientos de React y sus diversas funcionalidades que implementa para poder desarrollar un Ecommerce
 
 ## Running Locally
 
@@ -13,17 +13,12 @@ $ npm install
 $ npm start
 ```
 
-## Environment Variables
-
-See [`.env.example`](https://github.com/szuviria/zuvcommerce/blob/main/.env.example) for an example.
 
 ## Built Using
 
 - [Create-React-App](https://create-react-app.dev/)
-- [Vercel](https://vercel.com)
 - [Firebase](https://firebase.com)
-- [Chakra UI](https://chakra-ui.com/)
 
 ## Test App 
 
-[Deploy](https://zuvcommerce.vercel.app)
+[Deploy](https://github.com/wolf2lyon/Ecommerce-React)
