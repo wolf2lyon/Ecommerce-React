@@ -7,8 +7,8 @@ En este proyecto mostrare mis conocimientos de React y sus diversas funcionalida
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/szuviria/zuvcommerce.git
-$ cd proyectoEccommerece
+$ git clone https://github.com/wolf2lyon/Ecommerce-React.git
+$ cd Ecommerce-React
 $ npm install
 $ npm start
 ```
